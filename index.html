@@ -3,72 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Institutional performance analytics and professional reporting software for hedge funds, family offices, and investment managers.">
   <title>Tapestry Fund Analytics</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: #06111f;
+      color: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h1 {
+      margin: 0;
+      padding: 24px;
+      text-align: center;
+      font-size: clamp(2rem, 6vw, 4.5rem);
+      font-weight: 600;
+      letter-spacing: -0.03em;
+    }
+  </style>
 </head>
 <body>
-<main>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="Tapestry Fund Analytics home"><img src="assets/tapestry-logo-dark.png" alt=""><span>Tapestry Fund Analytics</span></a>
-    <nav aria-label="Main navigation"><a href="#features">Features</a><a href="#who-benefits">Who Benefits</a><a href="#analytics">Analytics</a><a href="#ai-commentary">AI Commentary</a><a href="#reports">Reports</a><a href="#pricing">Pricing</a><a href="#privacy">Privacy</a><a class="nav-cta" href="#evaluation">Download evaluation</a></nav>
-  </header>
-
-  <section class="hero" id="top">
-    <div class="hero-glow"></div>
-    <div class="hero-copy">
-      <div class="eyebrow"><span></span> Evaluation edition available</div>
-      <h1>See performance.<br><em>Understand the story.</em></h1>
-      <p class="hero-lead">Institutional performance analytics and professional reporting software built for hedge funds, family offices, and investment managers.</p>
-      <a class="hero-price" href="#pricing"><span>Professional Edition</span><strong>$499</strong><small>one-year license</small><b>View pricing →</b></a>
-      <div class="hero-actions"><a class="button primary" href="#evaluation">Download evaluation</a><a class="button secondary" href="#product">Explore the platform</a></div>
-      <div class="trust-row"><span>Windows desktop</span><span>Local data storage</span><span>Excel · PDF · Word</span></div>
-    </div>
-    <div class="hero-visual">
-      <div class="app-frame"><div class="frame-bar"><i></i><i></i><i></i><span>Tapestry Fund Analytics</span></div><img src="assets/dashboard.png" alt="Tapestry Fund Analytics performance dashboard"></div>
-      <div class="metric-card metric-one"><small>Annualized return</small><strong>17.64%</strong></div><div class="metric-card metric-two"><small>Sharpe ratio</small><strong>1.01</strong></div>
-    </div>
-  </section>
-
-  <section class="capability-strip" aria-label="Platform capabilities"><span>Performance</span><i></i><span>Risk</span><i></i><span>Drawdown</span><i></i><span>Benchmark analysis</span><i></i><span>Professional reports</span></section>
-
-  <section class="section" id="features">
-    <div class="section-heading"><p class="eyebrow">Built for investment professionals</p><h2>From monthly returns to a complete analytical picture.</h2><p>Replace fragmented spreadsheets and manual report preparation with a focused workflow built around the way investment managers evaluate performance.</p></div>
-    <div class="feature-grid">
-      <article><span class="feature-number">01</span><h3>Institutional analytics</h3><p>Move beyond headline performance with a structured view of returns, risk, drawdowns, consistency, and benchmark-relative results.</p><ul><li>Return and calendar-year analysis</li><li>Risk and distribution measures</li><li>Capture, alpha, beta, and correlation</li><li>Rolling analytics and visualizations</li></ul></article>
-      <article><span class="feature-number">02</span><h3>Professional reporting</h3><p>Generate presentation-ready deliverables from the same return history, benchmark selections, and analytical assumptions.</p><ul><li>Multi-tab Excel analytics workbook</li><li>Multi-page PDF performance tear sheet</li><li>Editable Word report</li><li>Definitions and allocator interpretations</li></ul></article>
-      <article><span class="feature-number">03</span><h3>Optional AI commentary</h3><p>Add narrative interpretation to analytical results using an OpenAI API key supplied and controlled by the user.</p><ul><li>Concise, standard, or detailed styles</li><li>Commentary embedded in reports</li><li>Optional and user controlled</li><li>Separate OpenAI API billing</li></ul></article>
-    </div>
-  </section>
-
-  <section class="visual-story" aria-label="Product workflow"><div class="visual-card visual-large"><img src="assets/dashboard.png" alt="Performance summary and growth dashboard"><span>Performance dashboard</span></div><div class="visual-stack"><div class="visual-card"><img src="assets/data-grid.png" alt="Monthly returns data management"><span>Monthly returns workflow</span></div><div class="visual-card"><img src="assets/settings.png" alt="Report and AI commentary settings"><span>Report configuration</span></div></div></section>
-
-  <section class="audience-section" id="who-benefits"><div class="section-heading"><p class="eyebrow">Who can benefit?</p><h2>Professional analytics for managers at every stage.</h2><p>Turn a monthly return history into a structured analytical package that is easier to evaluate, explain, and present.</p></div><div class="audience-grid"><article class="audience-primary"><span>01</span><h3>Emerging managers</h3><p>Evaluate a prior track record in an institutional format using the performance, risk, drawdown, and benchmark analytics that sophisticated investors expect to review.</p><ul><li>Build a professional analytics package before launch</li><li>Present a track record with consistent definitions and context</li><li>Support allocator conversations with Excel, PDF, and Word reports</li><li>Move beyond a basic monthly return table</li></ul></article><article class="audience-primary"><span>02</span><h3>Existing managers</h3><p>Maintain direct control of fund return data and generate the same analytical views through a local desktop application—without uploading performance history to a third-party analytics portal.</p><ul><li>Keep performance data on the firm’s computer</li><li>Refresh analytics internally when returns change</li><li>Standardize recurring investor and management reporting</li><li>Generate outputs without another website login</li></ul></article><article class="audience-secondary"><strong>Family offices</strong><p>Apply a consistent analytical framework when reviewing internal strategies or manager return streams.</p></article><article class="audience-secondary"><strong>Investor relations &amp; operations teams</strong><p>Produce repeatable performance materials from a controlled monthly return dataset.</p></article></div></section>
-
-  <section class="product-section" id="product"><div class="product-copy"><p class="eyebrow">A dashboard with depth</p><h2>Move from headline returns to risk, consistency, and benchmark context.</h2><p>Review growth, drawdowns, rolling returns, volatility, capture ratios, alpha, beta, correlation, risk-adjusted returns, and calendar-year performance in a single interface.</p><ul><li>Fund and benchmark comparisons</li><li>Rolling analytics and drawdown visualization</li><li>Definitions and interpretations built in</li></ul></div><div class="product-image"><img src="assets/analytics.png" alt="Detailed analytics dashboard showing benchmark and risk metrics"></div></section>
-
-  <section class="ai-section" id="ai-commentary"><div class="ai-visual"><img src="assets/settings.png" alt="OpenAI API and AI commentary settings in Tapestry Fund Analytics"><div class="ai-badge"><span>AI</span><strong>Commentary available</strong></div></div><div class="product-copy"><p class="eyebrow">Optional AI-powered interpretation</p><h2>Add narrative commentary to analytical results.</h2><p>Users may enable AI commentary in generated reports and choose a concise, standard, or detailed style. The feature requires the user’s own OpenAI API key and is entirely optional.</p><div class="api-note"><strong>Your credentials. Your choice.</strong><span>An OpenAI API key and separate API billing are required. A ChatGPT subscription does not automatically include API usage.</span></div></div></section>
-
-  <section class="analytics-library" id="analytics"><div class="section-heading"><p class="eyebrow">Complete analytics library</p><h2>Every calculation, organized and ready to explain.</h2><p>Review fund results on their own and in relation to selected benchmarks, with definitions and interpretations available throughout the application and reports.</p></div><div class="analytics-grid">
-    <article><h3>Returns &amp; timing</h3><ul><li>Annualized return since inception</li><li>Inception-to-date return</li><li>Annualized return — last 3 years</li><li>Annualized return — last 1 year</li><li>Calendar-year returns</li><li>Best month return</li><li>Best month date</li><li>Worst month return</li><li>Worst month date</li><li>Positive months</li><li>Negative months</li></ul></article>
-    <article><h3>Risk &amp; distribution</h3><ul><li>Annualized volatility</li><li>Annualized gain volatility</li><li>Annualized loss volatility</li><li>Annualized downside volatility</li><li>Maximum drawdown</li><li>Recovery time / drawdown duration</li><li>Skewness</li><li>Excess kurtosis</li><li>Average monthly gain</li><li>Average monthly loss</li><li>Gain/loss ratio</li></ul></article>
-    <article><h3>Risk-adjusted analytics</h3><ul><li>Sharpe ratio</li><li>Sortino ratio</li><li>Omega ratio</li><li>Calmar ratio</li><li>Treynor ratio</li></ul></article>
-    <article><h3>Benchmark analytics</h3><ul><li>Excess return</li><li>Annualized alpha</li><li>Beta</li><li>R-squared</li><li>Correlation</li><li>Upside correlation</li><li>Downside correlation</li><li>Annualized tracking error</li><li>Information ratio</li><li>Batting average</li><li>Up capture ratio</li><li>Down capture ratio</li><li>Up number ratio</li><li>Down number ratio</li><li>Up percentage ratio</li><li>Down percentage ratio</li></ul></article>
-    <article><h3>Charts &amp; visual analysis</h3><ul><li>Growth of investment</li><li>Drawdown history</li><li>Monthly return heatmaps</li><li>Rolling 12-month returns</li><li>Rolling 12-month volatility</li><li>Rolling 12-month beta</li><li>Return distribution histogram</li></ul></article>
-  </div></section>
-
-  <section class="product-section reverse" id="reports"><div class="product-copy"><p class="eyebrow">Reporting without reconstruction</p><h2>One dataset. Three professional deliverables.</h2><p>Generate Excel analytics, a multi-page PDF tear sheet, and an editable Word report from the same performance history and assumptions.</p><a class="text-link" href="mailto:sales@tapestryfundanalytics.com?subject=See%20Tapestry%20Fund%20Analytics%20Reports">Request sample reports →</a></div><div class="product-image"><img src="assets/reports.png" alt="Report generation screen for Excel PDF and Word outputs"></div></section>
-
-  <section class="sample-reports"><div class="sample-copy"><p class="eyebrow">Real demonstration outputs</p><h2>See what the platform produces.</h2><p>Review sample deliverables generated directly from the Tapestry Demonstration Fund. The sample data is illustrative and does not represent a live investment product.</p><div class="report-downloads"><a href="reports/Tapestry-Demonstration-Fund-Analytics.xlsx" download><span class="file-icon excel">X</span><div><strong>Excel Analytics</strong><small>Detailed workbook with analytical tables, heatmaps, and charts</small></div><b>Download</b></a><a href="reports/Tapestry-Demonstration-Fund-Tear-Sheet.pdf" target="_blank" rel="noreferrer"><span class="file-icon pdf">P</span><div><strong>PDF Tear Sheet</strong><small>Multi-page presentation-ready performance report</small></div><b>View</b></a><a href="reports/Tapestry-Demonstration-Fund-Tear-Sheet.docx" download><span class="file-icon word">W</span><div><strong>Word Report</strong><small>Editable report with analytics, commentary, and definitions</small></div><b>Download</b></a></div></div><div class="report-preview"><div class="paper"><img src="assets/report-previews/word-report-page.png" alt="Sample Tapestry Fund Analytics Word report page"></div><div class="preview-label"><span>Generated report</span><strong>Institutional Performance Tear Sheet</strong></div></div></section>
-
-  <section class="pricing-section" id="pricing"><div class="pricing-copy"><p class="eyebrow">Straightforward pricing</p><h2>Institutional analytics without institutional software pricing.</h2><p>A focused desktop platform for investment managers who want deeper analytics and professional outputs without adding another complex enterprise system.</p></div><div class="pricing-card"><div class="price-top"><span>Professional Edition</span><strong><sup>$</sup>499</strong><small>one-year software license</small></div><ul><li>Full performance and risk analytics</li><li>Fund and benchmark analysis</li><li>Excel, PDF, and Word report generation</li><li>Optional AI commentary capability</li><li>Local desktop data storage</li></ul><a class="button primary" href="mailto:sales@tapestryfundanalytics.com?subject=Tapestry%20Fund%20Analytics%20Professional%20License">Request evaluation</a><p class="price-note">OpenAI API usage, if enabled, requires a separate user-supplied API key and is not included in the license price.</p></div></section>
-
-  <section class="evaluation-section" id="evaluation"><div class="evaluation-copy"><p class="eyebrow">Evaluation Edition</p><h2>Explore the complete workflow on your Windows computer.</h2><p>Use the included Tapestry Demonstration Fund to review the dashboard, institutional analytics, benchmark analysis, and professional report generation.</p><ul><li>Windows 10 or Windows 11</li><li>Demonstration data included</li><li>No payment required for the evaluation</li><li>Optional AI commentary requires your own OpenAI API key</li></ul></div><div class="evaluation-form-card"><h3>Download the Evaluation Edition</h3><p>Tell us a little about yourself and your download will begin automatically.</p><form class="evaluation-form" id="evaluation-form" action="https://formspree.io/f/mqerkknn" method="POST"><input type="hidden" name="download" value="Tapestry Fund Analytics Evaluation v1.0.0"><div class="form-grid"><label>Full name<input name="name" type="text" autocomplete="name" required></label><label>Business email<input name="email" type="email" autocomplete="email" required></label><label>Firm or organization<input name="firm" type="text" autocomplete="organization" required></label><label>Role or title<input name="role" type="text" autocomplete="organization-title" required></label><label class="form-wide">Organization type<select name="organization_type" required><option value="" selected disabled>Select one</option><option>Emerging investment manager</option><option>Existing investment manager</option><option>Family office</option><option>Investor relations or operations</option><option>Allocator or consultant</option><option>Other</option></select></label></div><label class="consent-row"><input name="accepted_terms" type="checkbox" value="Yes" required><span>I agree to the <a href="terms.html" target="_blank">Terms of Service</a> and acknowledge the <a href="privacy.html" target="_blank">Privacy Policy</a>.</span></label><button class="button primary form-submit" type="submit">Download Evaluation for Windows</button><p class="form-note">Your information will be sent to Tapestry Fund Analytics. The 143 MB Windows download begins after successful submission.</p><p class="form-status" id="form-status" hidden></p></form></div></section>
-
-  <section class="privacy" id="privacy"><div><p class="eyebrow">Designed with privacy in mind</p><h2>Your performance data stays local.</h2></div><p>Tapestry Fund Analytics runs as a Windows desktop application. Fund return data and generated reports remain on the user’s computer. Optional AI commentary uses an OpenAI API key supplied and controlled by the user.</p></section>
-  <section class="cta-section"><img src="assets/tapestry-logo-dark.png" alt="Tapestry Fund Analytics"><div><p class="eyebrow">Measure · Analyze · Outperform</p><h2>Explore the Evaluation Edition.</h2><p>See the dashboard, analytics, and reporting workflow using the included Tapestry Demonstration Fund.</p></div><a class="button primary" href="#evaluation">Download evaluation</a></section>
-  <footer><span>© 2026 Tapestry Fund Analytics</span><span>For informational and analytical purposes only. Not investment advice.</span><span class="footer-links"><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a><a href="mailto:support@tapestryfundanalytics.com">Support</a></span></footer>
-</main>
-<script src="evaluation-download.js"></script>
+  <h1>Tapestry Fund Analytics</h1>
 </body>
 </html>
